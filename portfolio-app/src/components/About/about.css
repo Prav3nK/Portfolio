@@ -1,0 +1,68 @@
+#skll{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.sk{
+    font-size: 3rem;
+    font-size: 600;
+    padding: 3rem;
+    margin-bottom: 1.5rem;
+}
+.skdes{
+font-weight: 300;
+font-size: 1rem;
+max-width: 50rem;
+padding: 0 2rem;
+}
+.sksec{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+
+}
+.sks{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+.secIm{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+.secTex{
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width:720px) {
+    .secTex>p{
+        font-size: 2vw;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .secTex>p{
+        font-size: 3vw;
+    }
+    .secIm{
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    .secTex>h2{
+        font-size: 5vw;
+    }
+}
