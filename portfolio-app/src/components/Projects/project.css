@@ -46,3 +46,141 @@
     }
     
 }
+.projectList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.projectItem {
+    background-color: rgb(40,40,40);
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projectName {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  
+   
+}
+
+.projectDes {
+   text-align: left;
+    color: white;
+ 
+}
+
+.projectBtn {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.projectBtn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.projectBtn:hover {
+    background-color: #0056b3;
+}
+
+#projects {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.projectstitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.projectList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.projectItem {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projectName {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.projectDes {
+    text-align: left;
+    color: white;
+}
+
+.projectBtn {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.projectBtn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.projectBtn:hover {
+    background-color: #0056b3;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    border: none;
+    background-color: #fff;
+    margin-right: 10px;
+    width: 200px;
+    border-radius: 2rem;
+}
+
+.search-container button {
+    padding: 8px 16px;
+    background-color: yellowgreen;
+    color: black;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: yellow;
+}

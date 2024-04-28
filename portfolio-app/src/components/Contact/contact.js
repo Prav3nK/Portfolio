@@ -1,25 +1,26 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import wal from "../../assets/walmart.png"
-import mic from "../../assets/microsoft.png"
-import adobe from "../../assets/adobe.png"
-import facebook from "../../assets/facebook.png"
+import node from "../../assets/nodejs-logo.png"
+import react from "../../assets/react-logo.png"
+import python from "../../assets/python-logo.png"
+import c from "../../assets/c-logo.png"
 import  "./contact.css"
 import facebookIcon from "../../assets/facebook-icon.png"
 import twitter from "../../assets/twitter.png"
 import youTubeIcon from "../../assets/youtube.png"
 import instagramIc from "../../assets/instagram.png"
 
-const Conctact = () =>{
+const Contact = () =>{
         const [name,setName] = useState('');
         const [email,setEmail] = useState('');
         const [message, setMessage] = useState('');
-
+        const serviceId = process.env.REACT_APP_SERVICE_ID;
+        const publickey = process.env.REACT_APP_PUBLIC_KEY;
+        const templateId = process.env.REACT_APP_TEMPLATE_ID;
+        
         const handleSubmit = async (e) => {
         e.preventDefault();
-        const serviceId = 'service_xw8v5lm';
-        const publickey = 'F5otaVPDyO_UXTzTi';
-        const templateId ='template_14k70ei';
+
 
         const data= {
            service_id : serviceId,
@@ -46,16 +47,17 @@ const Conctact = () =>{
 
     return (
         <section id="contactsec">
-            <div id="clients">
-                <h1 className="title"> My clients</h1>
-                <p className="clientDesc"> I have had the opportunity to work with a diverese group of companies.
-                Some of the notable companies I have worked with includes
+            <div id="Me">
+                <h1 className="title"> My skills</h1>
+                <p className="MeDesc"> I possess strong proficiency in React, Angular, Flask,  to create interactive and responsive web applications. 
+                 Additionally, my expertise in Python, NodeJs and C# allows me to develop scalable and efficient backend solutions.
+                 I offer comprehensive solutions for both mobile and web development and welcome inquiries for assistance.
                 </p>
                 <div className="cIMGS">
-                    <img src={wal} alt="" className="cIM" />
-                    <img src={mic} alt="" className="cIM" />
-                    <img src={adobe} alt="" className="cIM" />
-                    <img src={facebook} alt="" className="cIM" />
+                    <img src={node} alt="" className="cIM" />
+                    <img src={react} alt="" className="cIM" />
+                    <img src={python} alt="" className="cIM" />
+                    <img src={c} alt="" className="cIM" />
                 </div>
             </div>
             <div id="contact">
@@ -99,4 +101,4 @@ const Conctact = () =>{
         </section>
     )
 }
-export default Conctact;
+export default Contact;

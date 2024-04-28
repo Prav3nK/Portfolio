@@ -5,6 +5,8 @@
     text-decoration: none;
     background: none;
     font-family: 'Poppins', sans-serif;
+    -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body{
